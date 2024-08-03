@@ -1,0 +1,210 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.login-logout {
+  font-size: 1em;
+  color: #fff;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 110px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 16px;
+  background-color: #fff;
+  /* height: 300px; */
+}
+
+.delete-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ff4d4d;
+}
+
+.delete-button-item {
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ff4d4d;
+}
+
+.card-body {
+  margin-bottom: 16px;
+  padding-top: 10px;
+}
+
+.card-body ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-body li {
+  /* border-bottom: 1px solid #ddd; */
+  padding: 8px 0;
+}
+
+.card-title {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.card-footer {
+  display: flex;
+  gap: 8px;
+}
+
+.card-footer input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.card-footer button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.card-footer button:hover {
+  background-color: #0056b3;
+}
+
+.card-grid {
+  display: grid;
+  gap: 16px; /* Space between cards */
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task.completed {
+  color: #888; /* Grey color for completed tasks */
+  text-decoration: line-through; /* Strike-through line for completed tasks */
+}
+
+/* Media query for desktop screens */
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1200px; /* Optional: limit maximum width for large screens */
+    margin: 0 auto; /* Center the grid horizontally */
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+  .card-grid {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+}
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.popup-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-buttons button:first-child {
+  background: #ccc;
+}
+
+.popup-buttons button:last-child {
+  background: #007bff;
+  color: #fff;
+}
+
+
+.login-button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
